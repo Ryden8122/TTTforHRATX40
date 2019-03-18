@@ -41,4 +41,7 @@ How do things work around here?
 	
 	Essentially a matrix!
 
-	
+	So the matrix is made, but it's hardcoded 9 cells.
+	It'd be a hassle to create and refer to each cell by class.
+
+	Unless there is some sort of way to draw the table using our app.js!
