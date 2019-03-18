@@ -9,3 +9,4 @@ WIP Repo for a tic tac toe game mini-app
 - [ ] Add HTML index
 - [ ] Add Stylesheet
 - [ ] Add JS for HTML
+- [ ] Create a changelog after achieve MVP v0.0
