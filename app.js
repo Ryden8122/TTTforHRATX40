@@ -9,26 +9,37 @@
 
   append table to app
 */
+
 function drawGrid() {
-  let appendTarget = document.getElementById("app");
-  let tableDiv = document.createElement("div");
-  tableDiv.className = "table";
+  let app = document.getElementById("app");
   
-  for (let i = 0; i < 3; i++){
-    let rowDiv = document.createElement("div");
-    rowDiv.className = "row" + i;
-
-    for (let j = 0; j < 3; j++){
-      let cellSpan = document.createElement("span");
-      cellSpan.className = "cell" + j;
-
-      rowDiv.append(cellSpan);
-    }
-    tableDiv.append(rowDiv);
+  let table = document.createElement("div");
+  table.className = "table";
+  
+  app.append(table);
+  
+  for (let i = 0; i < 9; i++){
+    let cellDiv = document.createElement("div");
+    cellDiv.className = "cell";
+    cellDiv.addEventListener("click", function(e){
+      cellDiv.textContent = 'Hello Light';
+      turnCounter++;
+    })
+    table.append(cellDiv);
   }
-  appendTarget.append(tableDiv);
 }
 
 document.addEventListener("DOMContentLoaded", function(e){
   drawGrid();
+
+  // let turnCounter = 0;
+  // let playerChar = 'X' //X starts first
+
+  // while (turnCounter > 9){
+  //   if (turnCounter % 2 === 0 || turnCounter === 0){
+  //     playerChar = 'X';
+  //   } else {
+  //     playerChar = 'O';
+  //   }
+  // } 
 })

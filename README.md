@@ -10,8 +10,11 @@ WIP Repo for a tic tac toe game mini-app
 - [x] Add Stylesheet
 - [x] Add JS for HTML
 - [ ] Create a changelog after achieving MVP v0.0
+	- [ ] Draw and a Table
+	- [ ] Draw Xs and Os, alternating after each press
+	- [ ] Reset Table
 
-## Notes and Research of on the humbe Tic-Tac-Toe game
+## Notes and Research of on the humble Tic-Tac-Toe game
 
 How do things work around here?
 
@@ -45,3 +48,5 @@ How do things work around here?
 	It'd be a hassle to create and refer to each cell by class.
 
 	Unless there is some sort of way to draw the table using our app.js!
+
+	How can I check game state?
